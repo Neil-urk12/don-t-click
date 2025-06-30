@@ -63,3 +63,21 @@ h2 {
     0% { transform: scale(0.7); opacity: 0; }
     100% { transform: scale(1); opacity: 1; }
 }
+
+.github-icon-container {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.github-icon-container a {
+    color: #333; /* Dark gray for the icon */
+    font-size: 2.5rem; /* Adjust size as needed */
+    transition: color 0.3s ease-in-out;
+}
+
+.github-icon-container a:hover {
+    color: #007bff; /* Blue on hover, or any other color */
+}

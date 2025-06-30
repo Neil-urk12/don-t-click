@@ -34,10 +34,15 @@ button.addEventListener('click', () => {
         const h2 = document.createElement('h2')
         h2.textContent = 'I told you....'
         img.src = 'itoldyou.webp';
+        img.loading = 'eager'
         img.alt = 'I told you';
         img.className = 'centered-image';
         container.appendChild(img);
         container.appendChild(h2);
+        const githubIconContainer = document.querySelector('.github-icon-container');
+        if (githubIconContainer) {
+            githubIconContainer.style.display = 'block';
+        }
         // Center the container again
         container.style.justifyContent = 'center';
         container.style.alignItems = 'center';
